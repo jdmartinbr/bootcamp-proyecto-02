@@ -1,34 +1,34 @@
-# Actividad_1
-## 1º Actividad semanal Maquetación Web.
-En Geekshubs Academy no podemos quedarnos quietos y hemos decidido ampliar nuestra área de negocio, con los viajes online
-Por ello nos hemos puesto en contacto con un diseñador y nos han pasado el siguiente diseño.
-![alt text](https://github.com/GeeksHubsAcademy/Actividad_1/blob/master/Agencia%20de%20viajes%20Bootcamp.jpg)
+# Actividad_2
+## 2º Actividad semanal Aplicacion Responsive.
+
+Después de tener en producción nuestra web de viajes, nuestro compañero Javi Olmo se ha dado cuenta que el 60% de las visitas se producen desde dispositivos móviles, por tanto creemos conveniente que nuestra web sea suficientemente responsive para que no se produzcan demasiados rebotes.
+
+Para ello os pasamos otro mockup/diseño de como queremos que sea nuestra vista en dispositivos móbiles.
+![alt text](https://github.com/GeeksHubsAcademy/Actividad_2/blob/master/Agencia%20de%20viajes%20Bootcamp.jpg)
+
+Respecto al menú desplegable debería aparecer de la siguiente manera.
+![alt text](https://github.com/GeeksHubsAcademy/Actividad_2/blob/master/Agencia%20de%20viajes%20Bootcamp%20-%20menu%20desplegable.jpg)
 
 ---
+
 ### Condiciones
-* Debe tratarse como una SPA Single Page Aplication
-* Debe tener los siguientes apartados:
-  * Header con Menú y logos de las redes sociales.
-  * Sección con los distintos viajes.
-    * Cada cuadrado debe tener: Imagen, titulo y precio (No debe ser exactamente igual que el del diseño)
-  * Sección de quienes somos
-  * Sección de contacto que tendrá los siguientes aparatados:
-    * Dispondrá de un formulario
-    * Dispondrá de un mapa de localización
-  * Dispondrá e un Footer igual al del diseño
+
+* Continuamos tratándolo como una SPA.
+* En mobile debe aparecer los siguientes apartados.
+  * Header con menu superior que cambiará de color y aplicará un fondo transparente para que en las zona blancas se pueda ver .
+  * Debe aparecer un carrousel con diferentes imágenes en el header se ocultarán las barras laterales para cambiar y se pondra horizontalmente puntos para indicar el cambio de slide.
+  * En el apartado viajes se convertira en una vista de tipo carrousel donde el usuario pulsando sobre las flechas podrá cambiar de un viaje a otro, no tendrá puesta en marcha automático sino la iteracción se producirá cuando el usuario pulse alguna de las flechas laterales. Además estás flechas deben verse bién y tener un tamaño suficiente para que sea factible su utilización.
+  * En el apartado quienes somos desaparecerá la imagen de fondo y apareerá sólo un color con la descripción.
+  * El apartado de localización no es visible en mobile.
+  * El footer debera ser igual al de la imagen.
+
 ---
-### Características
- * Debe utilizarse Bower para instalar las dependencias.
- * Debe utilizarse Git 
- > Importante debe existir commits por parte de los usuarios que conformar el equipo de trabajo.
- * Debemos tener un archivo .gitignore que no suba los paquetes que no son necesarios.
- * Debe utilizarse BootStrap y Jquery.
- * Se debe utilizar Gulp para ejecutar las siguientes tareas:
-    *Minificar js
-    *Minificar css
-    *Debe levantarnos un servidor local.
----
-### Fecha de Entrega.
-> La fecha tope de entrega: 12 de Marzo de 2018
-> Debe estar subido en los repositorios de los usuarios.
- 
+
+### Caraterísticas.
+* Debe utilizarse Bower para la instalación de las dependencias.
+* El proyecto debe estar subido en un contenedor de vagrant y debe cumplir las siguientes características:
+ * Debe existir un vagrantfile con las condiciones del contenedor.
+ * El contenedor debe disponer de apache instalado y configurado con la aplicación.
+ * El contenedor debe disponer de git instalado y apuntando al repositorio remoto:
+   * Debe ser actualizables con un simple git pull.
+ * La página web debe ser visible desde el equipo anfitrion una vez levantado el contenedor.
